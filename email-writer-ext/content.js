@@ -27,7 +27,7 @@ const getEmailContent = () => {
 };
 
 const findComposeToolbar = () => {
-  const selectors = [".btC", "aDh", '[role="toolbar"]', ".gU.Up"];
+  const selectors = [".btC", ".aDh", '[role="toolbar"]', ".gU.Up"];
   for (const selector of selectors) {
     const toolbar = document.querySelector(selector);
     if (toolbar) {
@@ -50,7 +50,7 @@ const injectButton = () => {
   console.log("Toolbar exist, creating AI button");
 
   const button = createAIButton();
-  button.classList.add(".ai-reply-button");
+  button.classList.add("ai-reply-button");
 
   button.addEventListener("click", async () => {
     try {
