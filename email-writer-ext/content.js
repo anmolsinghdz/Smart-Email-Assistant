@@ -22,8 +22,8 @@ const getEmailContent = () => {
     if (content) {
       return content.innerText.trim();
     }
-    return "";
   }
+  return "";
 };
 
 const findComposeToolbar = () => {
@@ -33,8 +33,8 @@ const findComposeToolbar = () => {
     if (toolbar) {
       return toolbar;
     }
-    return null;
   }
+  return null;
 };
 
 const injectButton = () => {
